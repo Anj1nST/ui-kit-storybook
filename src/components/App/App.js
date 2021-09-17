@@ -5,7 +5,7 @@ import { Button } from '../Button'
 function App() {
   return (
     <div className="App">
-      <Button />
+      <Button label={"Click me!"} handleClick={() => {}}/>
     </div>
   );
 }
