@@ -1,11 +1,11 @@
 import React from 'react';
 
-export const Button = () => {
+import './Button.css';
+
+export const Button = ({label = 'Text', handleClick}) => {
     return (
-        <div className="Button">
-            <button>
-                Click
-            </button>
-        </div>
+        <button className="Button" onClick={handleClick}>
+            {label}
+        </button>
     )
 };
